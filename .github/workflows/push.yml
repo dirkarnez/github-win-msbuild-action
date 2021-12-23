@@ -9,7 +9,7 @@ jobs:
       - name: Build & Test
         uses: ashutoshvarma/action-cmake-build@master
         with:
-          build-dir: ${{ runner.workspace }}/build
+          build-dir: ${{ runner.workspace }}\build
           # will set the CC & CXX for cmake
           # cc: clang
           # cxx: clang++
@@ -24,6 +24,6 @@ jobs:
           parallel: 14
         
       - name: Run 
-        run: ./winapi-helloworld.exe
-        working-directory: build/Release
+        run: .\winapi-helloworld.exe
+        working-directory: build\Release
         
