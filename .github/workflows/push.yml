@@ -24,6 +24,6 @@ jobs:
           parallel: 14
         
       - name: Run 
-        run: .\winapi-helloworld.exe
-        working-directory: build\Release
+        run: winapi-helloworld.exe
+        working-directory: ${{ runner.workspace }}\build\Release
         
